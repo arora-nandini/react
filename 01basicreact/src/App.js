@@ -1,6 +1,10 @@
+import cake from './cake'
 function App() {
   return (
-    <h1>HELLO WORLD</h1>
+    <>
+    <cake />
+    <h1>chocolate cake</h1>
+    </>
   );
 }
 
