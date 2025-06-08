@@ -8,6 +8,7 @@ todos:[
     completed :false,
 }
 ],
+//functionalities
 addTodo:(todo)=>{},
 updatedTodo:(id,todo)=>{},
 deleteTodo:(id)=>{},
@@ -18,4 +19,4 @@ ToggleComplete:(id)=>{}
 export const useTodo=()=>{
     return useContext(TodoContext)
 }
-export const Todoprovider=TodoContext.Provider
+export const TodoProvider=TodoContext.Provider

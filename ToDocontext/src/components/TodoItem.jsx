@@ -9,13 +9,13 @@ function TodoItem({ todo }) {
   const{updatedTodo,deleteTodo,ToggleComplete}=useTodo()    
 
   const editTodo=()=>{
-updatedTodo(todo.id,{...todo,todo:todoMsg})
+updatedTodo(todo.id,{...todo,todo:TodoMsg})
 setIsTodoEditable(false)
 
 }
 
 const ToggleCompleteddd=()=>{
-    ToggleComplete(todo).id
+    ToggleComplete(todo.id)
 }
 
     return (
@@ -28,14 +28,14 @@ const ToggleCompleteddd=()=>{
                 type="checkbox"
                 className="cursor-pointer"
                 checked={todo.completed}
-                onChange={toggleComplete}
+                onChange={ToggleCompleteddd}
             />
             <input
                 type="text"
                 className={`border outline-none w-full bg-transparent rounded-lg ${
                     isTodoEditable ? "border-black/10 px-2" : "border-transparent"
                 } ${todo.completed ? "line-through" : ""}`}
-                value={todoMsg}
+                value={TodoMsg}
                 onChange={(e) => setTodoMsg(e.target.value)}
                 readOnly={!isTodoEditable}
             />

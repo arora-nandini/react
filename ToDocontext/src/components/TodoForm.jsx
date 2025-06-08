@@ -14,7 +14,7 @@ setTodo("")
 }
 
     return (
-        <form    onSubmit={add} className="flex">
+        <form  onSubmit={add} className="flex">
             <input
                 type="text"
                 placeholder="Write Todo..."
