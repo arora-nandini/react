@@ -10,7 +10,7 @@ todos:[
 ],
 //functionalities
 addTodo:(todo)=>{},
-updatedTodo:(id,todo)=>{},
+updateTodo:(id,todo)=>{},
 deleteTodo:(id)=>{},
 ToggleComplete:(id)=>{}
 })

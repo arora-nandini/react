@@ -5,11 +5,11 @@ import { useState } from "react";
 
 function TodoItem({ todo }) {
   const[isTodoEditable,setIsTodoEditable]=  useState(false)
-  const [TodoMsg,setTodoMsg] =useState()
-  const{updatedTodo,deleteTodo,ToggleComplete}=useTodo()    
+  const [TodoMsg,setTodoMsg] =useState(todo.todo)
+  const{updateTodo,deleteTodo,ToggleComplete}=useTodo()    
 
   const editTodo=()=>{
-updatedTodo(todo.id,{...todo,todo:TodoMsg})
+updateTodo(todo.id,{...todo,todo:TodoMsg})
 setIsTodoEditable(false)
 
 }

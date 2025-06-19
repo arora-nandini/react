@@ -19,10 +19,10 @@ const removevalue=()=>{
     <h1>Chai aur react</h1>
     <h2>Counter value:{counter}</h2>
     <button
-    onClick={addvalue}>Add {counter} </button>
+    onClick={addvalue}>Add : {counter} </button>
     <br/>
    <button
-   onClick={removevalue}>Decrease value{counter}</button>
+   onClick={removevalue}>Decrease value :{counter}</button>
    <p>footer:{counter}</p>
    </>
   )

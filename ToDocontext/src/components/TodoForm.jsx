@@ -9,7 +9,7 @@ const add=(e)=>{
     e.preventDefault()
 if (!todo)return // no values in it
 
-addTodo({todo,completed:false})
+addTodo({todo:todo,completed:false})
 setTodo("")
 }
 
